@@ -8,6 +8,6 @@ export PATH=$PATH:"/sbin"
 nano /etc/hosts
 192.168.1.10 furkan.alwaysdata.net
 
-mkdir /var/www/furkan
-cd /var/www/furkan
+mkdir /var/www/jujutsu
+cd /var/www/jujutsu
 nano index.html
