@@ -11,3 +11,12 @@ nano /etc/hosts
 mkdir /var/www/jujutsu
 cd /var/www/jujutsu
 nano index.html
+<html>
+<body>
+<h1>
+Site de Furkan Kebab
+</h1>
+</body>
+</html>
+
+touch /etc/apache2/sites-available/jujutsu.conf
