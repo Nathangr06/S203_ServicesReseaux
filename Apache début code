@@ -1,0 +1,13 @@
+su
+mdp : root
+
+mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.old
+
+export PATH=$PATH:"/sbin"
+
+nano /etc/hosts
+192.168.1.10 furkan.alwaysdata.net
+
+mkdir /var/www/furkan
+cd /var/www/furkan
+nano index.html
