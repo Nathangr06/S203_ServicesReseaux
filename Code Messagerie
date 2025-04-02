@@ -7,7 +7,7 @@ netstat -ltn
 export PATH=$PATH:/sbin
 adduser furkan
 
-```sur un autre terminal a laisser ouvert
+#sur un autre terminal a laisser ouvert
 tail -f /var/log/mail.log
 
 nano /etc/postfix/main.cf
@@ -23,3 +23,8 @@ nano /etc/dovecot/conf.d/10-mail.conf
 mail_location = maildir:~/Maildir
 systemctl restart dovecot
 sudu apt install thunderbird
+
+nano /etc/resolv.conf
+#mettre tout en commentaire pour le dns
+search jjk.fr
+nameserver 192.168.0.169
