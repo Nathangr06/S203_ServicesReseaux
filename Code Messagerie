@@ -15,7 +15,7 @@ myhostname = mail.jjk.fr
 mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 /etc/init.d/postfix restart
 nano /etc/hosts
-192.168.122.102(IP de sa machine) mail.jjk.fr
+192.168.0.171(IP de sa machine) mail.jjk.fr
 nano /etc/postfix/main.cf
 home_mailbox = Maildir/
 apt-get install dovecot-imapd
@@ -28,6 +28,7 @@ nano /etc/resolv.conf
 #mettre tout en commentaire pour le dns
 search jjk.fr
 nameserver 192.168.0.169
+nameserver 192.168.0.171
 
 nano /etc/postfix/mes_alias
 groupe3 : samuel, nathan, furkan
