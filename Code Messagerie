@@ -33,3 +33,8 @@ nano /etc/postfix/mes_alias
 groupe3 : samuel, nathan, furkan
 sti2d : samuel, furkan
 marseille : furkan, nathan
+
+/sbin/postalias /etc/postfix/mes_alias
+nano /etc/postfix/main.cf
+alias_maps = hash:/etc/postfix/mes_alias
+
