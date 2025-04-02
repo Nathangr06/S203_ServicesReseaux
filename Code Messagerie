@@ -11,11 +11,11 @@ adduser furkan
 tail -f /var/log/mail.log
 
 nano /etc/postfix/main.cf
-myhostname = www.jjk.fr
+myhostname = mail.jjk.fr
 mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 /etc/init.d/postfix restart
 nano /etc/hosts
-192.168.122.102(IP de sa machine) www.jjk.fr
+192.168.122.102(IP de sa machine) mail.jjk.fr
 nano /etc/postfix/main.cf
 home_mailbox = Maildir/
 apt-get install dovecot-imapd
