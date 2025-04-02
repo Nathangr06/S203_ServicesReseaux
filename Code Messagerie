@@ -38,3 +38,9 @@ marseille : furkan, nathan
 nano /etc/postfix/main.cf
 alias_maps = hash:/etc/postfix/mes_alias
 
+#Pour la 6 test
+nano /etc/postfix/main.cf
+myorigin = $myhostname
+append_dot_mydomain
+recipient_delimiter = +
+
